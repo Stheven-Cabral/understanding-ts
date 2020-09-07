@@ -1,0 +1,4 @@
+Core Types
+(number): All numbers, no differentiation between integers and floats, i.e. 1, 5.3, -10
+(sintr): 'Hi', `Hi`, "Hi"
+(boolean): true or false
