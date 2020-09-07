@@ -3,6 +3,10 @@ Core Types
 (string): 'Hi', `Hi`, "Hi"
 (boolean): true or false
 (object) : {kay: value}
+          - The object type has the following syntax which can be viewed when hovering over an object {key: value-type; key: value.type} . As you can see, semicolons are used instead of commas.
+
+(arrays): [1, 2, 3]  - Can be flexible or strict (regarding the element types).
+                    - Typescript descibes arrays as 'string[]' .
 
 Type Inference
 (type inference) - Typscript is able to infer the type of a constant or variable (let or var) based on the value.
