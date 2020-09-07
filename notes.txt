@@ -8,6 +8,10 @@ Core Types
 (arrays): [1, 2, 3]  - Can be flexible or strict (regarding the element types).
                     - Typescript descibes arrays as 'string[]' .
 
+TS Core Types
+(tuple): [1, 2] - Fixed length arrays.
+(enum): enum{NEW, OLD}  - Creating custome identifier number relationships. (View enums.js)
+
 Type Inference
 (type inference) - Typscript is able to infer the type of a constant or variable (let or var) based on the value.
   - For example const num = 5; will have a type of '5' because it is constant.
