@@ -11,6 +11,7 @@ Core Types
 TS Core Types
 (tuple): [1, 2] - Fixed length arrays.
 (enum): enum{NEW, OLD}  - Creating custome identifier number relationships. (View enums.js)
+(any): *  - Any kind of value, no specific type assignment.
 
 Type Inference
 (type inference) - Typscript is able to infer the type of a constant or variable (let or var) based on the value.
