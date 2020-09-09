@@ -1,17 +1,19 @@
-// Behind the seens, admin receives 0, read_only receives 1, and author receives 2.
-enum Role {ADMIN, READ_ONLY, AUTHOR};
+// Union types can help us tell typescript that a function can accept two or more types for a parameter.
+// To use a union type, use the pipe symbol '|'
+function combine(input1: number | string , input2: number | string) {
+  let result;
 
-// You can identify the start values of identifiers in an enum. You can also use strings as the identifiers value.
-// enum Role {ADMIN = 5, READ_ONLY, AUTHOR};
+  if(typeof(input1) === 'number' && typeof(input2) === 'number') {
+    result = input1 + input2;
+  } else {
+    result = input1.toString() + input2.toString();
+  }
 
-const ind = {
-  name: 'Stheven',
-  age: 30,
-  hobbies: ['Cooking', 'Gaming'],
-  // enum is accessed with property 'role'
-  role: Role.ADMIN
-};
-
-if (ind.role === Role.ADMIN) {
-  console.log('is admin');
+  return result;
 }
+
+const combinedAges = combine(30, 26);
+console.log(combinedAges);
+
+const combinedNames = combine('Bob', 'Ana');
+console.log(combinedNames);

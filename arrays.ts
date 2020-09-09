@@ -2,7 +2,7 @@ const individual: {
   name: string;
   age: number;
   hobbies: string[];
-  // Below, we inger role as a tuple type with only two values, the first a number and second a string.
+  // Below, we infer role as a tuple type with only two values, the first a number and second a string.
   // Inferring your own types is important when you want to specific with your properties.
   role: [number, string]
 } = {
