@@ -11,3 +11,12 @@ function printResult(num: number) {
 }
 
 printResult(add(5, 12));
+
+// You can also type functions using function types.
+// View the following to know how to function type.
+// The parameter name doesn't have to match the parameter name in 'add' function.
+let combineValue: (a: number, b: number) => number;
+
+combineValue = add;
+// The following throws an error due to 'combineValue' having a function type.
+// combineValue = printResult;
