@@ -1,3 +1,4 @@
+// UNKNOWN TYPE
 let userInput: unknown;
 // type unknown can be assigned any value type.
 // It is similar to 'any' type but any has more fexibility as type checking is disabled. (View udemy course video 29 at 1:45)
@@ -10,3 +11,11 @@ userInput = 'Max';
 if (typeof(userInput) === 'string') {
   userName = userInput;
 }
+
+
+// ERROR TYPE
+function generateError(message: string, code: number) {
+  throw { message: message, errorCode: code };
+}
+
+
