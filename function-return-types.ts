@@ -23,6 +23,7 @@ combineValue = add;
 
 // In The following, you can add types to callbacks. 
 // In this example callback returns void, so the function doesn't expect any result.
+// Even though the callback expects to not return anything 'void', you can still return something even with 'void' as the return type.
 function addAndHandle (n1: number, n2: number, cback: (num: number) => void) {
   const result = n1 + n2;
   cback(result);
