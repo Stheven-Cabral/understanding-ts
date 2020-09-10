@@ -1,19 +1,13 @@
-// Union types can help us tell typescript that a function can accept two or more types for a parameter.
-// To use a union type, use the pipe symbol '|'
-function combine(input1: number | string , input2: number | string) {
-  let result;
-
-  if(typeof(input1) === 'number' && typeof(input2) === 'number') {
-    result = input1 + input2;
-  } else {
-    result = input1.toString() + input2.toString();
-  }
-
-  return result;
+// Functions can have return types and it can be viewed when hovering over the function name.
+// Usually typescript can infer the result type based on if the parameters have similar types.
+// The following would have a a return type of 'number'
+function add(n1: number, n2: number) {
+  return n1 + n2;
 }
 
-const combinedAges = combine(30, 26);
-console.log(combinedAges);
+// The following has a return type of 'void' because it does not return anything.
+function printResult(num: number) {
+  console.log('Result: ' + num);
+}
 
-const combinedNames = combine('Bob', 'Ana');
-console.log(combinedNames);
+printResult(add(5, 12));
