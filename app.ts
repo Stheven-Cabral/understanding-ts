@@ -14,8 +14,11 @@ if (typeof(userInput) === 'string') {
 
 
 // ERROR TYPE
-function generateError(message: string, code: number) {
+// never typing never returns anything.
+// Below, you can infer the type 'never' for the throw error function because when you throw an error, the script ends.
+function generateError(message: string, code: number): never {
+  // When you throw an error, it ends the function or crashes the script.
   throw { message: message, errorCode: code };
 }
 
-
+generateError('Error', 500);
