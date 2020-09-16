@@ -19,7 +19,13 @@ class Department {
   }
 
   addEmployee(employee: string) {
-    this.employees.push(employee);
+    this.employees.push(employee);  
+  }
+
+  // static methods are methods that can be called without instantiating the class it is in. i.e. Math.floor();
+  // You can't access static properties or methods inside the class or class instances unless you put the property name in front, i.e. Department.createEmployee();
+  static createEmployee(name: string) {
+    return {name: name};
   }
 }
 
