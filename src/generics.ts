@@ -24,3 +24,9 @@ function merge<T, U>(objA: T, objB: U) {
 // }
 
 const mergedObj = merge({name: 'Max'}, {job: 'Painter'});
+
+
+// Another type of generic constraint using the keyword 'keyof'
+function extractAndConvert <T extends Object, U extends keyof T>(obj: T, key: U) {
+  return 'Value: ' + obj[key];
+}
