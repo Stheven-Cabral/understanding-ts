@@ -49,3 +49,5 @@ class Product {
     return this.price * (1 + tax);
   }
 }
+
+// You can also add decoraters to an accessor (get and set), methods, and also method parameters. View video 110 of course.
